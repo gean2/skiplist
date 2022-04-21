@@ -25,7 +25,7 @@ Similarly, for the fine-grained locking implementation, we need to ensure correc
 
 ### Resources
 
-We will use the GHC machines to implement and test our skip list implementations. We will use the PSC machines to run benchmarking code. 
+We will use the GHC machines to implement and test our skip list implementations. We will use the PSC machines to measure runtime of our benchmarking code.
 
 We use the following papers to guide our implementations of the skip lists:
 
@@ -36,7 +36,7 @@ We use the following papers to guide our implementations of the skip lists:
 ### Goals and Deliverables
 
 1. Provide implementations of a coarse-grained locking, fine-grained locking, and lock-free skip list
-2. Benchmark across different distributions of work requested, looking at how our data structure performs with mostly insertions, mostly deletions, or mostly searches. We'll also compare the runtime across different skip list implementations and number of threads (up to 128 threads on the PSC machines).
+2. Measured runtime and speedup across different distributions of work requested, looking at how our data structure performs with mostly insertions, mostly deletions, or mostly searches. We will be comparing the runtime across these different workloads as well as different skip list implementations and number of threads (up to 128 threads on the PSC machines).
 3. Discussion and analysis of the reasons behind speedup trends between different skip list implementations and also why speedup is not perfect, etc.
 
 We will most likely implement Herlihy's purportedly "simpler" fine-grained locking skip list implementation; if we have extra time, we may implement two separate fine-grained locking implementations to compare the performance of the two.
