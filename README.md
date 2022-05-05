@@ -1,5 +1,6 @@
 # skiplist
 15-418/618 Final Project: Concurrent Skip Lists
+Redirect here: https://github.com/gean2/parallel-cnn
 
 ## Project Proposal
 
